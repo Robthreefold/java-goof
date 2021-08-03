@@ -15,4 +15,4 @@ jobs:
           python-version: 3.8
 
       - name: Run script to add Snyk to Dockerfiles
-        run: python3 /scripts/addsnyk.py
+        run: python3 ./scripts/addsnyk.py
