@@ -16,3 +16,4 @@ jobs:
 
       - name: Run script to add Snyk to Dockerfiles
         run: python3 ./scripts/addsnyk.py
+        run: cat Dockerfile
