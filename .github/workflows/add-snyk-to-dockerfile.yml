@@ -12,7 +12,7 @@ jobs:
       - name: setup python
         uses: actions/setup-python@v2
         with:
-          - python-version: 3.8
+          python-version: 3.8
 
       - name: Run script to add Snyk to Dockerfiles
         run: python3 addsnyk.py
