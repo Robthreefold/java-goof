@@ -1,0 +1,17 @@
+name: add-snyk-to-dockerfile
+
+on: [push]
+
+jobs:
+  build: ubuntu-latest
+
+  steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    - name: setup python
+      uses: actions/setup-python@v2
+      with:
+        - python-version: 3.8
+
+    - name: Run script to add Snyk to Dockerfiles
+      run: python3 addsnyk.py
