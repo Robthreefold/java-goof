@@ -1,0 +1,166 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Todolist MVC parent module                                         [pom]
+[INFO] todolist-core                                                      [jar]
+[INFO] todolist-web-common                                                [jar]
+[INFO] todolist-web-struts Maven Webapp                                   [war]
+[INFO] 
+[INFO] --------------------< io.github.snyk:todolist-mvc >---------------------
+[INFO] Building Todolist MVC parent module 1.0-SNAPSHOT                   [1/4]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ todolist-mvc ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ todolist-mvc ---
+[INFO] Installing /Users/roberthicks/IdeaProjects/java-goof/pom.xml to /Users/roberthicks/.m2/repository/io/github/snyk/todolist-mvc/1.0-SNAPSHOT/todolist-mvc-1.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --------------------< io.github.snyk:todolist-core >--------------------
+[INFO] Building todolist-core 1.0-SNAPSHOT                                [2/4]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ todolist-core ---
+[INFO] Deleting /Users/roberthicks/IdeaProjects/java-goof/todolist-core/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ todolist-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ todolist-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 12 source files to /Users/roberthicks/IdeaProjects/java-goof/todolist-core/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 7
+[WARNING] source value 7 is obsolete and will be removed in a future release
+[WARNING] target value 7 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ todolist-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/roberthicks/IdeaProjects/java-goof/todolist-core/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ todolist-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /Users/roberthicks/IdeaProjects/java-goof/todolist-core/target/test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 7
+[WARNING] source value 7 is obsolete and will be removed in a future release
+[WARNING] target value 7 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ todolist-core ---
+[INFO] Surefire report directory: /Users/roberthicks/IdeaProjects/java-goof/todolist-core/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running io.github.todolist.core.UserServiceTest
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by javassist.util.proxy.SecurityActions (file:/Users/roberthicks/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of javassist.util.proxy.SecurityActions
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.948 sec
+Running io.github.todolist.core.TodoServiceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ todolist-core ---
+[INFO] Building jar: /Users/roberthicks/IdeaProjects/java-goof/todolist-core/target/todolist-core-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ todolist-core ---
+[INFO] Installing /Users/roberthicks/IdeaProjects/java-goof/todolist-core/target/todolist-core-1.0-SNAPSHOT.jar to /Users/roberthicks/.m2/repository/io/github/snyk/todolist-core/1.0-SNAPSHOT/todolist-core-1.0-SNAPSHOT.jar
+[INFO] Installing /Users/roberthicks/IdeaProjects/java-goof/todolist-core/pom.xml to /Users/roberthicks/.m2/repository/io/github/snyk/todolist-core/1.0-SNAPSHOT/todolist-core-1.0-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------------< io.github.snyk:todolist-web-common >-----------------
+[INFO] Building todolist-web-common 1.0-SNAPSHOT                          [3/4]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ todolist-web-common ---
+[INFO] Deleting /Users/roberthicks/IdeaProjects/java-goof/todolist-web-common/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ todolist-web-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ todolist-web-common ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 8 source files to /Users/roberthicks/IdeaProjects/java-goof/todolist-web-common/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 7
+[WARNING] source value 7 is obsolete and will be removed in a future release
+[WARNING] target value 7 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ todolist-web-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/roberthicks/IdeaProjects/java-goof/todolist-web-common/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ todolist-web-common ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ todolist-web-common ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ todolist-web-common ---
+[INFO] Building jar: /Users/roberthicks/IdeaProjects/java-goof/todolist-web-common/target/todolist-web-common-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ todolist-web-common ---
+[INFO] Installing /Users/roberthicks/IdeaProjects/java-goof/todolist-web-common/target/todolist-web-common-1.0-SNAPSHOT.jar to /Users/roberthicks/.m2/repository/io/github/snyk/todolist-web-common/1.0-SNAPSHOT/todolist-web-common-1.0-SNAPSHOT.jar
+[INFO] Installing /Users/roberthicks/IdeaProjects/java-goof/todolist-web-common/pom.xml to /Users/roberthicks/.m2/repository/io/github/snyk/todolist-web-common/1.0-SNAPSHOT/todolist-web-common-1.0-SNAPSHOT.pom
+[INFO] 
+[INFO] -----------------< io.github.snyk:todolist-web-struts >-----------------
+[INFO] Building todolist-web-struts Maven Webapp 1.0-SNAPSHOT             [4/4]
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ todolist-web-struts ---
+[INFO] Deleting /Users/roberthicks/IdeaProjects/java-goof/todolist-web-struts/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ todolist-web-struts ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ todolist-web-struts ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to /Users/roberthicks/IdeaProjects/java-goof/todolist-web-struts/target/classes
+[WARNING] bootstrap class path not set in conjunction with -source 7
+[WARNING] source value 7 is obsolete and will be removed in a future release
+[WARNING] target value 7 is obsolete and will be removed in a future release
+[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ todolist-web-struts ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/roberthicks/IdeaProjects/java-goof/todolist-web-struts/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ todolist-web-struts ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ todolist-web-struts ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-war-plugin:2.4:war (default-war) @ todolist-web-struts ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [todolist-web-struts] in [/Users/roberthicks/IdeaProjects/java-goof/todolist-web-struts/target/todolist]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/Users/roberthicks/IdeaProjects/java-goof/todolist-web-struts/src/main/webapp]
+[INFO] Webapp assembled in [220 msecs]
+[INFO] Building war: /Users/roberthicks/IdeaProjects/java-goof/todolist-web-struts/target/todolist.war
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ todolist-web-struts ---
+[INFO] Installing /Users/roberthicks/IdeaProjects/java-goof/todolist-web-struts/target/todolist.war to /Users/roberthicks/.m2/repository/io/github/snyk/todolist-web-struts/1.0-SNAPSHOT/todolist-web-struts-1.0-SNAPSHOT.war
+[INFO] Installing /Users/roberthicks/IdeaProjects/java-goof/todolist-web-struts/pom.xml to /Users/roberthicks/.m2/repository/io/github/snyk/todolist-web-struts/1.0-SNAPSHOT/todolist-web-struts-1.0-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Todolist MVC parent module 1.0-SNAPSHOT:
+[INFO] 
+[INFO] Todolist MVC parent module ......................... SUCCESS [  0.280 s]
+[INFO] todolist-core ...................................... SUCCESS [  9.344 s]
+[INFO] todolist-web-common ................................ SUCCESS [  0.351 s]
+[INFO] todolist-web-struts Maven Webapp ................... SUCCESS [  1.715 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  11.802 s
+[INFO] Finished at: 2021-09-15T13:04:42-04:00
+[INFO] ------------------------------------------------------------------------

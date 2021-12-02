@@ -8,10 +8,20 @@ value = str(runSnykList[4])
 
 
 # Checks Dockerfile to see if Snyk Monitor is in the Dockerfile
-def checkforsnyk(file, status):
+def check_for_snyk(file, status):
     for line in file:
         if line.rstrip('\r\n') == status.rstrip('\r\n'):
             return True
+
+
+# Check if the file can be opened
+def check_file(item):
+    try:
+        open(item, 'r+')
+        return True
+    except IOError:
+        print("Files could not be opened.  Please check if the file exist and has proper permissions.")
+        return False
 
 
 print("Looking for Dockerfiles!")
@@ -22,11 +32,13 @@ for dirpath, dirnames, files in os.walk(cur_dir):
             filename = os.path.join(dirpath, file)
             print("Found a Dockerfile in the following directory:", filename)
             print("Opening Dockerfile...")
-            with open(filename, 'r+') as out:
-                # Checking if Snyk is already in the Dockerfile
-                if checkforsnyk(out, value):
-                    print("Snyk is already in this Dockerfile")
-                else:
-                    print("Adding Snyk to Dockerfile")
-                    for i in runSnykList:
-                        out.write("%s\n" % i)
+            if check_file(filename):
+                with open(filename, 'r+') as out:
+                    # Checking if Snyk is already in the Dockerfile
+                    if check_for_snyk(out, value):
+                        print("Snyk is already in this Dockerfile")
+                    else:
+                        print("Adding Snyk to Dockerfile")
+                        for i in runSnykList:
+                            out.write("%s\n" % i)
+
