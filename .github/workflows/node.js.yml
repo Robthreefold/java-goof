@@ -33,3 +33,6 @@ jobs:
     - name: listallorgs
       env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      run: |
+          sudo curl -L --include '--header "Content-Type: application/json; charset=utf-8" --header "Authorization: token " + $SNYK_TOKEN 'https://snyk.io/api/v1/orgs'
+
