@@ -17,6 +17,17 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run build --if-present
+    - run: npm test
+    - run: npm install --save parse-github-url
+    
+    
     - name: listallorgs
       env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
@@ -28,8 +39,6 @@ jobs:
           
     - name: gitparse
     
-      uses: theowenyoung/git-url-parse@v1
-      with:
-       url: https://github.com/snyk-labs/java-goof
+    - run: var gh = require('parse-github-url'); gh('https://github.com/rhicksiii91/java-goof');
      
 
