@@ -30,6 +30,6 @@ jobs:
     
       uses: theowenyoung/git-url-parse@v1
       with:
-       url: https://github.com/rhicksiii91/java-goof
+       url: https://github.com/snyk-labs/java-goof
      
 
