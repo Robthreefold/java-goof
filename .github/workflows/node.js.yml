@@ -19,9 +19,9 @@ jobs:
     
     - name: listallorgs
       env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |
           sudo curl -L --include --header "Content-Type: application/json; charset=utf-8" --header "Authorization: token da12766a-46b6-4186-8ba1-83eb1aae653c" 'https://snyk.io/api/v1/orgs'
           git remote -v
-          sudo curl -H "Accept: application/vnd.github.v3+json" -u roberthicksiii@gmail.com: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 https://api.github.com/organizations
+          sudo curl -H "Accept: application/vnd.github.v3+json" -u roberthicksiii@gmail.com:$GH_TOKEN https://api.github.com/organizations
 
