@@ -39,6 +39,6 @@ jobs:
           
     - name: gitparse
     
-    - run: var gh = require('parse-github-url'); gh('https://github.com/rhicksiii91/java-goof');
+      run: var gh = require('parse-github-url'); gh('https://github.com/rhicksiii91/java-goof');
      
 
