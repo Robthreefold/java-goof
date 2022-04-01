@@ -22,7 +22,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |
           sudo curl -L --include --header "Content-Type: application/json; charset=utf-8" --header "Authorization: token da12766a-46b6-4186-8ba1-83eb1aae653c" 'https://snyk.io/api/v1/orgs'
-          git_url = git remote -v
+          git remote -v
           sudo curl -H "Accept: application/vnd.github.v3+json" -u roberthicksiii@gmail.com:$GH_TOKEN https://api.github.com/organizations
           
           
@@ -30,6 +30,6 @@ jobs:
     
       uses: theowenyoung/git-url-parse@v1
       with:
-       url: $git_url
+       url: https://github.com/rhicksiii91/java-goof
      
 
